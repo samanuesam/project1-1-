@@ -1,0 +1,61 @@
+.contactus{
+    background-color:black ;
+    color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding:40px;
+    
+}
+.aboutheading,.contactheading,.navigationheading{
+    font-family: arial;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 30px;
+}
+.aboutus-info{
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.call,.email{
+    color: white;
+    padding: 8px;
+
+}
+#callicon,#mailicon{
+    margin-right: 10px;
+    color: gray;
+}
+.navproject,.navaboutus,.navcontact,.navteam{
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+@media (max-width:700px) {
+    .contactus{
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigationheading{
+        margin-top: 40px;
+    }
+}
+@media (max-width:500px) {
+    .contactus{
+        grid-template-columns: 1fr;
+    }
+    .contactheading{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .aboutheading,.navigationheading{
+        padding-bottom: 10px;
+    }
+    .aboutus-info{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}

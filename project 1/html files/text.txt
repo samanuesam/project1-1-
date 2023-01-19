@@ -1,0 +1,19 @@
+@media (max-width:940px) {
+    .navright{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .navright a{
+        display: block;
+        margin: 20px 10px;
+        font-size: 20px;
+    }
+    .navleft{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

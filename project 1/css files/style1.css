@@ -1,0 +1,201 @@
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+*{
+    margin: 0px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+.logoimg{
+    width: 86px;
+    
+}
+.navright{
+    margin: 0px;
+}
+.logodiv{
+    display: inline-block;
+}
+.companynamediv{
+    display: inline-block;
+    margin-top: -4px;
+}
+.company-name{
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    vertical-align: center;
+    margin-right: 30px;
+}
+.aproject,.ateam,.acontact,.aabout{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 15px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s;
+}
+.acontact{
+    margin-right: 80px;
+}
+.aproject:hover,.ateam:hover,.acontact:hover,.aabout:hover{
+    color: black;
+}
+.menuicon{
+    width: 30px;
+    margin-left: 10px;
+    display: none;
+}
+
+.home{
+    margin-top: 70px;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    background: url("../images/aboutpageimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 200px;
+    justify-content: space-between;
+}
+.backgroundimage{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: 1;
+}
+.right-heading{
+    display: flex;
+    flex-direction: column;
+  
+    color: white;
+    margin-left: 60px;
+    margin-top: 180px;
+}
+.h1{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+.read-more{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 130px;
+    background-color: #21536F;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 8px;
+}
+.left-heading{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    z-index: 2;
+    color: white;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+h2{
+    color: #68CB1C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.mission-info,.vision-info{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.burgermenu,.close{
+    width: 20px;
+    display: none;
+    margin-right: 10px;
+}
+
+@media (max-width:740px) {
+    
+    
+    h1{
+        width: 80px;
+        font-size: 23px;
+        margin-left: 0px;
+    }
+    .right-heading{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .left-heading{
+        margin-left: 10px;
+        margin-top: 30px;
+        width: 200px;
+    }
+    .navright{
+        margin-top: 0px;
+        padding: 0px;
+        position: fixed;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        background-color: white;
+        height: 100vh;
+        
+        margin-top: 20px;
+        z-index: 1;
+        padding-top: 80px;
+        display: none;
+        
+    }
+    .navigation{
+        width: 100%;
+    }
+    .navright a{
+        display: block;
+        margin: 40px 10px;
+        font-size: 20px;
+    }
+    .navleft{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+    .burgermenu{
+        display: block;
+        z-index: 2;
+    }
+    .close{
+        z-index: 2;
+    }
+}
+@media (max-width:1000px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        background: url("../images/aboutpageimage.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        padding-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+}
